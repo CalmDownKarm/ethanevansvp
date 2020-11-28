@@ -1,0 +1,54 @@
+{{!< default}}
+
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+{{!-- The big featured header, it uses blog cover image as a BG if available --}}
+
+
+{{!-- Everything inside the #post tags pulls data from the post --}}
+{{#post}}
+
+<header class="site-home-header">
+    {{> header-background background=feature_image}}
+    {{!--Special header-image.hbs partial to generate the background image--}}
+    <div class="inner">
+        {{> "site-nav"}}
+        <div class="site-header-content">
+            <h1 class="site-title">
+                {{title}}
+            </h1>
+        </div>
+    </div>
+    </div>
+</header>
+
+<main id="site-main" class="site-main outer">
+    <div class="inner">
+        <form action="https://getform.io/f/093a8e7f-b6be-44ae-85d8-ecaebab556dc" method="POST">
+            <label for="relating"> What is this message Regarding </label>
+            <select name="relating" id="relatingselect">
+                <option value="resume" name="resume">Resume</option>
+                <option value="foo" name="bar">Foo</option>
+            </select>
+            <input type="text" name="name">
+            <input type="email" name="email">
+            <input type="text" name="message">
+            <button type="submit">Send</button>
+
+        </form>
+
+    </div>
+</main>
+
+{{/post}}
+
+{{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
+{{#contentFor "scripts"}}
+<script>
+    $(function () {
+        var $postContent = $(".post-full-content");
+        $postContent.fitVids();
+    });
+</script>
+{{/contentFor}}
