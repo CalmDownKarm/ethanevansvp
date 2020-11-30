@@ -1,0 +1,7 @@
+.homeMainImg{
+    position: relative;
+    float: left;
+    width: 400px;
+    min-height: 400px;
+    margin: 20px;
+}
