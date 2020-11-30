@@ -1,0 +1,26 @@
+.post-content{
+    margin-left: 250px;
+}
+.post-content li, .post-content ul{
+    text-decoration: none;
+    color: #fdfdfd;
+    font-size: 30px;
+    list-style: none;
+}
+
+.post-content a:link,
+.post-content a:visited,
+.post-content a{
+    color: #6c6b6b;
+    text-decoration: none !important;
+    box-shadow: none !important; 
+}
+
+.main-image{
+    position: absolute;
+    right:250px;
+    bottom:-60px;
+    width: 430px;
+    height: 250px;
+    
+}
