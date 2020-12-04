@@ -1,5 +1,9 @@
 .site-main{
+   
     font-size: 25px;
+    max-width: 1350px;
+    margin: 0 auto;
+
 }
 
 .homeMainImg{
