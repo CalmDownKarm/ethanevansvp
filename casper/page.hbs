@@ -9,7 +9,7 @@ into the {body} of the default.hbs template --}}
 {{#post}}
 
 <header class="site-home-header">
-    {{> header-background background = "/assets/images/BLUE_BG.jpg?"}}
+     {{> header-background background=@site.cover_image}}
     {{!--Special header-image.hbs partial to generate the background image--}}
     <div class="inner">
         {{> "site-nav"}}
