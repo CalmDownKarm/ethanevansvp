@@ -17,6 +17,7 @@ width: 100%;
 
 .post-content{
     float: left;
+    max-width: 500px;
 }
 .post-content li, .post-content ul{
     text-decoration: none;
