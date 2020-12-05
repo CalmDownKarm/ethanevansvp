@@ -37,12 +37,11 @@
     min-height: 100px;
 }
 
-.contact-form input[type="submit"] {
+.contact-form button[type="submit"] {
     grid-column-start: 2;
     justify-self: end;
-    margin-top: 0.6em;
-    background: #000;
-    color: white;
+    margin-top: 1em;
+    background-color: #111;
     width: auto;
     float: right;
     text-align: right;

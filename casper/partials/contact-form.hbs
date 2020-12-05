@@ -2,15 +2,14 @@
     <div class="contact-form-container">
         <h3 class="contact-form-title">MESSAGE ME DIRECTLY!</h3>
         <p class="contact-form-description"></p>
-        <form data-members-form="contact" action="https://getform.io/f/093a8e7f-b6be-44ae-85d8-ecaebab556dc">
-
+        <form action="https://getform.io/f/093a8e7f-b6be-44ae-85d8-ecaebab556dc" method="POST">
             <div class="form-group">
                 <input type="text" name="firstname" id="first-name" placeholder="First Name" required>
                 <input type="text" name="lastname" id="last-name" placeholder="Last Name" required>
                 <input type="email" name="emailaddress" id="email-address" placeholder="Your email address" required>
                 <textarea rows="5" name="message" id="message" placeholder="Message" required></textarea>
                 <input type="hidden" name="subject" id="email-subject" value="Contact Form Submission">
-                <input type="submit" value="Send Message!">
+                <button type="submit" style="background-color: #111; margin-top: 0.6em;">Send</button>
             </div>
             <div class="message-success">
                 <strong>Great!</strong> Check your inbox and click the link to confirm your subscription.
