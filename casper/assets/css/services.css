@@ -7,11 +7,10 @@
     font-weight: 600;
 }
 
-.post-content {
-    margin-left: 10px;
+.post-content{
+    margin-left: 250px;
 }
-.post-content li,
-.post-content ul {
+.post-content li, .post-content ul{
     text-decoration: none;
     color: #fdfdfd;
     font-size: 30px;
@@ -20,26 +19,27 @@
 
 .post-content a:link,
 .post-content a:visited,
-.post-content a {
+.post-content a{
     color: #6c6b6b;
     text-decoration: none !important;
-    box-shadow: none !important;
+    box-shadow: none !important; 
 }
 
-.main-image {
+.main-image{
     position: absolute;
     right: 15%;
     bottom: -13px;
     width: 346px;
     height: 194px;
+    
 }
 
 @media only screen and (max-width: 950px) {
-    .main-image {
-        display: none;
+  .main-image{
+    display: none;
     }
-
-    .post-content {
-        margin-left: 0px;
+        
+    .post-content{
+    margin-left: 0px;
     }
 }
