@@ -21,10 +21,7 @@ into the {body} of the default.hbs template --}}
                     {{title}}        
                 </h1> 
             </div>
-        </div>
-    <div class="main-image">
-        <img src="{{feature_image}}"/>
-    </div>
+        </div>   
     </div>
 </header>
 
@@ -35,6 +32,9 @@ into the {body} of the default.hbs template --}}
                     
             <section class="post-full-content">
                 <div class="post-content">
+                     <div class="main-image">
+                            <img src="{{feature_image}}"/>
+                        </div> 
                     {{content}}
                 </div>
             </section>
