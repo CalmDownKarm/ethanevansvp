@@ -585,6 +585,11 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 @media (max-width: 700px) {
+    
+    .site-main{
+        width:90%;
+        padding: 5px;
+    }
     .site-home-header .site-nav {
         margin-left: -5vw;
     }
